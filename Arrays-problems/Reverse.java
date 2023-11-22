@@ -1,27 +1,29 @@
+
+import java.util.Arrays;
+
 public class Reverse {
 
-    public static void reverseStrings(String[] strings) {
-        int first = 0, last = strings.length - 1;  
+    public static void reverseArray(int[] arr) {
 
-        while (first < last) {
-            String temp = strings[last];  // C 
-            strings[last] = strings[first]; // A
-            strings[first] = temp; // C
+        int first = 0, last = arr.length - 1;
+
+        while( first < last ) {
+
+            int temp = arr[last];
+            arr[last] = arr[first];
+            arr[first] = temp;
 
             first++;
             last--;
+            
         }
     }
 
     public static void main(String[] args) {
 
-        String[] strings = {"A", "B", "C"};
+        int[] arr = {1,2,3,4,5,6,};
 
-        reverseStrings(strings);
-
-        for (int i = 0; i < strings.length; i++) {
-            System.out.print(strings[i] + " ");
-        }
+          System.out.print(Arrays.toString(arr)+ " ");
 
         System.out.println();
     }
