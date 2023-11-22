@@ -7,6 +7,9 @@ public class Palindrome {
 
         String reverse = "";
 
+        // I = b
+
+
      
         for (int i = checkpalindrome.length() - 1; i >= 0; i--) {
             reverse += checkpalindrome.charAt(i);

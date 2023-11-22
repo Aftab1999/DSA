@@ -9,7 +9,9 @@ public class evenodd {
         System.out.print("Enter an Number: ");
          int Num = scanner.nextInt();
 
-        int  lastDigits = Num - ((Num / 10) * 10 );
+        int  lastDigits = Num - ((Num / 10) * 10 );  
+          
+        
 
         if (lastDigits == 0) {
            System.out.print("The number is even"); 
